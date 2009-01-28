@@ -1,6 +1,6 @@
 /*
  * jQuery UI Badge
- * version: 0.1b (2009-01-18)
+ * version: 0.2b (2009-01-18)
  * @requires jQuery v1.2.6 or later
  * @requires jQuery UI v1.6 or later
 
@@ -19,7 +19,7 @@
 			$(this.element).each( function(){
 				if(!$("#" + widget._identifier(this)).length){
 					var badge_html = 
-						"<div style='position:relative;width:100%;height:100%'>" +
+						"<div style='position:relative;float:left'>" +
 						"<div id='" + widget._identifier(this) + 
 						"'/></div>";
 					$(this).prepend(badge_html);
@@ -70,7 +70,7 @@
 	$.extend($.ui.badge, {
 		defaults: {
 			cssClass: "ui-widget-badge",
-			offset: {left:0, top:0},
+			offset: {left:0, top:0}
 		}
 	});
 
